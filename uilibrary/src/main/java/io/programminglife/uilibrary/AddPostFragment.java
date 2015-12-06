@@ -57,6 +57,7 @@ public class AddPostFragment extends Fragment {
         mPostContent.setOnEditTextImeBackListener(new EditTextImeBackListener() {
             @Override
             public void onImeBack(CustomEditText ctrl, String text) {
+                getActivity().getSupportFragmentManager().popBackStack();
                 getActivity().getSupportFragmentManager().beginTransaction().remove(mCurrentFragment).commit();
             }
         });
