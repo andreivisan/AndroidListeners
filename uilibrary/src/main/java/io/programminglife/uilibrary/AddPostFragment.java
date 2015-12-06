@@ -53,6 +53,7 @@ public class AddPostFragment extends Fragment {
     }
 
     private void initView() {
+        mPostContent.requestFocus();
         mPostContent.setOnEditTextImeBackListener(new EditTextImeBackListener() {
             @Override
             public void onImeBack(CustomEditText ctrl, String text) {
