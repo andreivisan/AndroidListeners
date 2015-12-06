@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 import io.programminglife.uilibrary.customcomponents.CustomEditText;
@@ -27,5 +26,9 @@ public class AddPostFragment extends Fragment {
         mPostButton = (RelativeLayout)mFragmentView.findViewById(R.id.post_button);
 
         return mFragmentView;
+    }
+
+    private void initView() {
+
     }
 }
